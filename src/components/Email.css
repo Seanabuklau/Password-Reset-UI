@@ -1,0 +1,14 @@
+.email-content p{
+    margin: 0 0 2.5rem;
+    text-align: justify;
+    font-size: 12px;
+    color: rgb(143, 141, 141);
+}
+
+.email-content span{
+    font-size: 0.6rem;
+    color: red;
+    position: absolute;
+    left: 0px;
+    bottom: -1.1rem;
+}

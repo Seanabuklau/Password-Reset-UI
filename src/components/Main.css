@@ -1,0 +1,183 @@
+.wrapper{
+    height: 420px;
+    padding: 1rem 2rem;
+    background-color: #ffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+}
+
+.body{
+    margin-top: 30px;
+}
+
+form div:not(.underline) {
+    position: relative;
+}
+
+form label{
+    font-size: 14px;
+}
+
+form input:not(.auth-pin-input input){
+    height: 100%;
+    width: 100%;
+    padding: 6px 0;
+    border: none;
+    border-bottom: 1.5px solid silver;
+}
+
+form input:focus{
+    outline: none;
+}
+
+form input:focus~label,
+form input:valid~label{
+    transform: translateY(-20px);
+    color: #4158d0;
+}
+
+form label{
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    color: silver;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+form div .underline{
+    position: absolute;
+    bottom: 0;
+    height: 1.5px;
+    width: 100%; 
+}
+
+form .underline::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: #4158d0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+} 
+
+form :focus~.underline::before,
+form :valid~.underline::before{
+    transform: scaleX(1);
+} 
+
+/* Progress Bar */
+
+.progress-bar-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+}
+
+.progress-bar-container div{
+    margin: 0 !important;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.progress-bar-container::before{
+    content:"";
+    position: absolute;
+    background-color: #e0e0e0;
+    height: 2px;
+    top:29%;
+    left:20%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    width:60%;
+    z-index:0;
+    transition: 0.3s ease;
+}
+
+.progress{
+    position: absolute !important;
+    background-color: #4158d0;
+    height: 2px;
+    top:28%;
+    left:20%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    width:50%;
+    z-index:0;
+    transition: 0.3s ease;
+}
+
+.circle{
+    border: 2.5px solid #e0e0e0;
+    background-color: #ffff;
+    color: #e0e0e0;
+    border-radius: 50%;
+    height: 27px;
+    width: 27px;
+    align-items: center;
+    transition: 0.4s ease;
+    font-size: 12px;
+}
+
+.active{
+    border-color:#4158d0;
+    color: #4158d0 !important;
+}
+
+/* Steps */
+.steps{
+    flex-direction: column;
+    text-align: center;
+    font-size: 13px;
+}
+
+.steps div:last-child{
+    margin-top: 10px !important;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+/* Footer */
+.footer{
+    position: absolute !important;
+    bottom: 2.2rem; 
+    text-align: center;
+    transform: translateX(60%);
+}
+
+.footer button{
+    width: 45px;
+    border-radius: 5px;
+    color: #ffff;
+    background-color: #ffff;
+    border: solid #4158d0 2px;
+}
+
+.footer button:hover{
+    background-color: rgb(222, 222, 222);
+}  
+
+.footer button:first-child{
+    margin-right: 1.5rem;
+}
+
+.footer button:last-child{
+    margin-left: 1.5rem;
+}
+
+.arrow{
+    color: #4158d0;
+    font-size: 1rem;
+}
+
+/* Disabled buttons */
+
+#disabled{
+    border: solid #b1bdf9 2px !important;
+}
+
+#disabled-icon{
+    color: #b1bdf9 !important;
+}

@@ -1,0 +1,46 @@
+.auth-content p{
+    margin-bottom: 2rem;
+    font-size: 12px;
+    text-align: left;
+    color: rgb(143, 141, 141);
+}
+
+.auth-content button{
+    margin-top: 2rem;
+    padding: 8px;
+    width: 120px;
+    border-radius: 8px;
+    border: 2px solid rgba(66, 148, 193);
+    background-color: rgb(66, 148, 193);
+    color: #ffff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.auth-content button:hover{
+    border: 2px solid rgb(106, 171, 206);
+    background-color: rgb(106, 171, 206);
+    color: rgba(255, 255, 255, 0.847);
+}
+
+.auth-pin-input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.auth-pin-input input{
+    text-align: center;
+    font-size: 25px;
+    width: 25px;
+    height: 34px;
+    border: 2px solid silver;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.auth-pin-input input:focus{
+    border: 2px solid #4158d0;
+}
+
+
+

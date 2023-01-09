@@ -1,0 +1,9 @@
+.end-container img{
+    margin-top: 0.8rem;
+}
+
+.end-container p{
+    font-size: 13px;
+    margin-top: 2rem;
+    color: rgb(143, 141, 141);
+}
